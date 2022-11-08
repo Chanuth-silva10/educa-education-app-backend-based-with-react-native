@@ -20,8 +20,11 @@ if(process.env.NODE_ENV!=="PRODUCTION"){
 
 // Route imports
 const user = require("./routes/UserRoute");
+const teacher = require("./routes/TeacherRoute");
 
-app.use("/api/v2",user);
+app.use("/api/v2", user);
+app.use("/teacher", teacher);
+
 
 // it's for errorHandeling
 app.use(ErrorHandler);
