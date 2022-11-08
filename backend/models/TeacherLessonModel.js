@@ -14,6 +14,7 @@ const lessonSchema = new mongoose.Schema({
   },
   description: {
     type: String,
+    default: "none",
   },
   topic: {
     type: String,

@@ -14,9 +14,11 @@ const courseSchema = new mongoose.Schema({
   },
   numberOfChapters: {
     type: String,
+    default: "10",
   },
   time: {
     type: String,
+    default: "10 hour",
   },
   students: {
     type: String,
